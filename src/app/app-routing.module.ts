@@ -4,7 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { PersonaConsultaComponent } from './pulsacion/persona-consulta/persona-consulta.component';
 import { PersonaRegistroComponent } from './pulsacion/persona-registro/persona-registro.component';
 
+
 const routes: Routes = [
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+
   { path: 'personaConsulta',
   component: PersonaConsultaComponent 
 },

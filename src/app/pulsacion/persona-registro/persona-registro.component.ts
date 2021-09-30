@@ -16,7 +16,15 @@ persona!:Persona;
   }
 
   add(){
-    alert('Se agrego una persona');
-    this.personaService.post(this.persona)
+    if(this.persona.identificacion==null){
+      alert('Llene los campos vacios')    
+      }else if (this.persona.sexo === "Masculino") {
+         this.persona.pulsacion = 220 - this.persona.edad;
+      } else {
+        this.persona.pulsacion = 210 - this.persona.edad;    
+      }
+      this.persona.pulsacion /= 10;
+      alert('Su pulsacion es de'+ this.persona.pulsacion),
+      this.personaService.post(this.persona);
   }
 }

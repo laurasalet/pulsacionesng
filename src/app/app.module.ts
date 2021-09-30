@@ -7,12 +7,14 @@ import { PersonaConsultaComponent } from './pulsacion/persona-consulta/persona-c
 import { PersonaRegistroComponent } from './pulsacion/persona-registro/persona-registro.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     PersonaConsultaComponent,
     PersonaRegistroComponent,
-    NavMenuComponent
+    NavMenuComponent,
+ 
   ],
   imports: [
     BrowserModule,

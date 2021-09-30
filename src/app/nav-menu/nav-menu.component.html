@@ -1,8 +1,8 @@
-<li class="nav-item" [routerLinkActive]="['link-active']">
-    <a class="nav-link text-dark" [routerLink]="['/personaConsulta']">
-    Consulta</a >
-   </li>
-  <li class="nav-item" [routerLinkActive]="['link-active']"> 
-    <a class="nav-link text-dark" [routerLink]="['/personaRegistro']" >
-      Registro</a >
-     </li>
+<ul class="nav justify-content-end navbar-dark bg-primary">
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]='["/personaRegistro"]'>Persona registra</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]='["/personaConsulta"]'>Persona consulta</a>
+    </li>
+</ul>
